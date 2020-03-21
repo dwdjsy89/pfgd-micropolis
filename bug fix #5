@@ -1,0 +1,8 @@
+Summary: Fix for Bug #5: Flooding should only start on tiles that are the edges of water 
+Description: 
+static boolean isFloodable(int tile)
+	{
+		//assert (tile & LOMASK) == tile;//delete this
+		assert (isRiverEdge(tile)) == true;//add this
+		return (tile == DIRT  || (isDozeable(tile) && isCombustible(tile)));
+	}
