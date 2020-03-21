@@ -1,0 +1,5 @@
+Summary: Fix for Bug #2: Game starts on January 1800 but should start on January 1900
+Description: Change 
+"String formatGameDate 
+ c.set(1800 + cityTime/48"
+1800 to 1900
